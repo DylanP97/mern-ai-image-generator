@@ -23,7 +23,7 @@ const startServer = async () => {
 
     try {
         connectDB(process.env.MONGODB_URL);
-        app.listen(8080, () => console.log('Server has started on port https://mern-ai-image-generator-snmj.onrender.com'))
+        app.listen(() => console.log('Server has started on port https://mern-ai-image-generator-snmj.onrender.com'))
     } catch (error) {
         console.log(error)
     }
